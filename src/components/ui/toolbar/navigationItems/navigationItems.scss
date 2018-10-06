@@ -1,0 +1,61 @@
+@import '../../../../styles/scss/mixins';
+@import '../../../../styles/scss/variables';
+// 
+// NavigationItems component style
+// 
+
+nav {
+    line-height: initial;
+
+    ul {
+        display        : flex;
+        align-items    : center;
+        margin-bottom  : 0;
+        padding        : 0;
+        list-style-type: none;
+
+        li {
+            display         : inline-block;
+            margin-right    : 1em;
+            padding         : 0.5em;
+            border-radius   : 3px;
+            background-color: rgba(255, 255, 255, 0);
+            transition      : background-color 0.2s ease-in; 
+
+            &:last-child {
+                margin       : 0;
+                font-size    : 1.5em;
+                border       : 1px solid $white;
+                padding      : unset;
+                padding-left : 0.3em;
+                padding-right: 0.3em;
+                padding-top  : 0.3em;
+                border-radius: 3px;
+            }
+
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            
+            a {
+                display        : block;
+                color          : $white;
+                text-decoration: none;
+                text-align     : center;
+                text-transform : capitalize;
+                @include font-style($font-open-sans, $font-tiny, $font-regular);
+                
+                &:active, &:hover {
+                    text-decoration: none;
+                    color          : $white;
+                }
+                
+                .fa {
+                    display      : block;
+                    margin-bottom: 0.3em;
+                }
+            }
+        }
+    }
+}

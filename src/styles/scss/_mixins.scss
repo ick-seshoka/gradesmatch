@@ -1,0 +1,12 @@
+//
+// Mixins partial file : common style functions
+//
+
+// Font style mixin
+@mixin font-style($fontFamily, $fontSize, $fontWeight) {
+    font : {
+        family: $fontFamily;
+        size  : $fontSize;
+        weight: $fontWeight;
+    }
+}

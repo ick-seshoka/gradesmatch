@@ -2,16 +2,16 @@
 //  Variables partial file : contains all variables shared in scss files 
 // 
 
-// fonts
+// Fonts
 $font-open-sans: 'Open Sans', sans-serif;
 $font-arimo    : 'Arimo', sans-serif;
 
 
-// colors
+// Colors
 $black                 : #000000;
 $white                 : #ffffff;
-$gray                  : #E9EBEE;
-$light-gray            : #E9EBEE;
+$gray                  : #818182;
+$light-gray            : #F9F9F9;
 $highlight-blue        : #108CBC;
 $arlet-danger-red      : #E84849;
 $arlet-yellow          : #EDC92C;
@@ -22,3 +22,11 @@ $mark-blue             : #00D2FC;
 $mark-indigo           : #009EFA;
 $icon-yellow           : #FEC842;
 
+// Font sizes
+$font-large: 1.5625em;
+$font-tiny : 0.9375em;
+
+// Font weights
+$font-bold     : 700;
+$font-semi-bold: 600;
+$font-regular  : 400;

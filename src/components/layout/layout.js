@@ -1,13 +1,20 @@
+import React, { Component } from 'react';
 // 
 // Layout component : main content wrapper
 // 
 
-import React, { Component } from 'react';
+// Components
+// Toolbar component
+import Toolbar from '../ui/toolbar/toolbar';
+// Wrap component
+import Wrap from '../hoc/wrap';
 
 class Layout extends Component {
     render() {
         return(
-            <div>Hello GradesMatch!</div>
+            <Wrap>
+                <Toolbar></Toolbar>
+            </Wrap>
         );
     }
 }

@@ -1,0 +1,42 @@
+@import '../../../../styles/scss/mixins';
+@import '../../../../styles/scss/variables';
+// 
+// Searchbar component style
+// 
+
+form {
+    display    : inline-block;
+    margin-left: 1.675em;
+    line-height: initial;
+
+    div {
+        padding         : 0.4125em 0.6875em;
+        border-radius   : 3px; 
+        background-color: $white;
+
+        input {
+            width           : 19.125em;
+            font-size       : 0.8875em;
+            background-color: transparent;
+            border          : transparent;
+            
+            &:focus, &:active {
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border          : transparent;
+            cursor          : pointer;
+
+            &:focus, &:active {
+                outline: none;
+            }
+
+            i {
+                color: $gray;
+            }
+        }
+    }
+}
