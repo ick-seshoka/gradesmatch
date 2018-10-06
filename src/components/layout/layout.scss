@@ -1,0 +1,17 @@
+@import '../../styles/scss/variables';
+@import '../../styles/scss/mixins';
+// 
+// Layout component style
+// 
+
+main {
+    min-height: 1400px;
+    margin-top      : 5.5em;
+    padding-left    : 7.5em;
+    padding-top     : 1em;
+    background-color: $light-gray;
+}
+
+aside {
+    background-color: $white;
+}

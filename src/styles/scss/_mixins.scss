@@ -10,3 +10,11 @@
         weight: $fontWeight;
     }
 }
+
+// Feding font style mixin
+@mixin font-style-heading() {
+    display       : inline-block;
+    margin-left   : 0.5em; 
+    text-transform: capitalize;
+    @include font-style($font-open-sans, $font-large, $font-semi-bold);
+}

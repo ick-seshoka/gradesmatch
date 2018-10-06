@@ -23,11 +23,11 @@ const toolbar = ( props ) => (
         <header>
             <div className="container-fluid">
                 <div className="row align-items-center">
-                    <div className="col-6" style={{display: "flex", alignItems: "center"}}>
+                    <div className="col-5" style={{display: "flex", alignItems: "center"}}>
                         <Link to="/" className="logo" href="#">gradesmatch</Link>
                         <Searchbar />
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 offset-1">
                         <NavigationItems />
                     </div>
                 </div>

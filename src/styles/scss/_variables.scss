@@ -13,14 +13,19 @@ $white                 : #ffffff;
 $gray                  : #818182;
 $light-gray            : #F9F9F9;
 $highlight-blue        : #108CBC;
-$arlet-danger-red      : #E84849;
-$arlet-yellow          : #EDC92C;
-$alert-success-green   : #94DD5F;
+$alert-red             : #E84849;
+$alert-yellow          : #EDC92C;
+$alert-green           : #94DD5F;
 $info-yellow           : #FAC917;
 $mark-green            : #4FFBDF;
 $mark-blue             : #00D2FC;
 $mark-indigo           : #009EFA;
 $icon-yellow           : #FEC842;
+$text-gray             : #4b4f56;
+$gradient-start-color  : #2E9A70;
+$gradient-middle-color : #1889B5;
+$gradient-end-color    : #AC1BE1;
+
 
 // Font sizes
 $font-large: 1.5625em;
@@ -30,3 +35,4 @@ $font-tiny : 0.9375em;
 $font-bold     : 700;
 $font-semi-bold: 600;
 $font-regular  : 400;
+$font-light    : 300;

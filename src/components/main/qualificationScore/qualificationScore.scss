@@ -1,0 +1,65 @@
+@import '../../../styles/scss/mixins';
+@import '../../../styles/scss/variables';
+// 
+// QualificationsScore component style
+// 
+
+section#course-heading {
+    position        : relative;
+    background-color: $white;
+
+    &:before {
+        position        : absolute;
+        display         : block;
+        top             : 0;
+        left            : 0;
+        width           : 100%;
+        background-color: blueviolet;
+        background-image: linear-gradient(-90deg, $gradient-start-color 0%, $gradient-middle-color 50%, $gradient-end-color 100%);
+        height          : 9.375em;
+        content         : '';
+    }
+
+    div#logo-container {
+        display            : inline-block;
+        width              : 10em;
+        height             : 10em;
+        margin-top         : 2.75em;
+        margin-left        : 1.875em;
+        background-image   : url('../../../assets/university-of-pretoria-logo.png');
+        background-position: 0 0;
+        background-size    : cover;
+        background-color   : $white;
+        border             : 2px solid $light-gray;
+        border-radius      : 3px;
+        box-shadow         : 0px 0px 0 2px rgba(0, 0,0,0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    button { 
+        margin-top      : 4.1875em;
+        padding         : 0.15em 0.75em;
+        border          : 1px solid $highlight-blue;
+        background-color: $white;
+        text-transform  : uppercase;
+        cursor          : pointer;
+        border-radius   : 3px;
+        color           : $highlight-blue;
+        transition: all 0.2s ease-in;
+        @include font-style($font-open-sans, 0.825em, $font-semi-bold);
+
+        &:hover {
+            color           : $white;
+            background-color: $highlight-blue;
+            border          : 1px solid $white;
+        }
+    }
+
+    h2 {
+        @include font-style-heading();
+        
+        &#course-title {
+            margin-left: 1.875em;
+            font-weight: $font-bold;
+        }
+    }
+}
