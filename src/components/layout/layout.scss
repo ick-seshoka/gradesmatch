@@ -5,13 +5,20 @@
 // 
 
 main {
-    min-height: 1400px;
     margin-top      : 5.5em;
     padding-left    : 7.5em;
     padding-top     : 1em;
     background-color: $light-gray;
-}
-
-aside {
-    background-color: $white;
+    
+    aside {
+        padding-top     : 1em;
+        padding-bottom  : 1em;
+        background-color: $white;
+        border          : 1px solid $border-gray; 
+    
+        h6 {
+            text-transform: capitalize;
+            @include font-style($font-open-sans, $font-mark-tiny, $font-semi-bold);
+        }
+    }
 }

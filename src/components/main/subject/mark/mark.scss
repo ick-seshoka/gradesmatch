@@ -1,0 +1,39 @@
+@import '../../../../styles/scss/variables';
+@import '../../../../styles/scss/mixins';
+// 
+// Mark component style
+// 
+
+div.mark {
+    padding: 0.25em;
+
+    P {
+        display       : inline-block;
+        text-transform: capitalize;
+        @include font-style($font-open-sans, $font-mark-tiny, $font-regular);
+    }
+
+    span {
+        width           : 2.715em;
+        height          : 2.715em;
+        line-height     : 2.715em;
+        text-align      : center;
+        float           : right;
+        background-color: $white;
+        border-radius   : 50%;
+        color           : $black;
+        @include font-style($font-arimo, $font-mark-tiny, $font-regular);
+    }
+
+    &.my-mark {
+        background-color: $mark-green;
+    }
+
+    &.required-mark {
+        background-color: $mark-blue;
+    }
+
+    &.aps-points {
+        background-color: $mark-indigo;
+    }
+}

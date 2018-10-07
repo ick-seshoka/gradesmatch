@@ -4,9 +4,21 @@
 // QualificationsScore component style
 // 
 
+section#course-heading, 
+section#course-description, 
+section#qualification-score, 
+section#subjects,
+section#other-subjects {
+    position         : relative;
+    padding-left     : 1.875em;
+    padding-right    : 1.875em;
+    background-color : $white;
+    border-left      : 1px solid $border-gray;
+    border-right     : 1px solid $border-gray;
+}
+
 section#course-heading {
-    position        : relative;
-    background-color: $white;
+    border-top: 1px solid $border-gray;
 
     &:before {
         position        : absolute;
@@ -24,15 +36,14 @@ section#course-heading {
         display            : inline-block;
         width              : 10em;
         height             : 10em;
-        margin-top         : 2.75em;
-        margin-left        : 1.875em;
+        margin-top         : 2em;
         background-image   : url('../../../assets/university-of-pretoria-logo.png');
         background-position: 0 0;
         background-size    : cover;
+        background-repeat  : no-repeat; 
         background-color   : $white;
-        border             : 2px solid $light-gray;
-        border-radius      : 3px;
-        box-shadow         : 0px 0px 0 2px rgba(0, 0,0,0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+        border             : 5px solid $white;
+        box-shadow         : 0 5px 10px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.03);
     }
 
     button { 
@@ -49,7 +60,7 @@ section#course-heading {
 
         &:hover {
             color           : $white;
-            background-color: $highlight-blue;
+            background-color: $gradient-start-color;
             border          : 1px solid $white;
         }
     }
@@ -58,8 +69,61 @@ section#course-heading {
         @include font-style-heading();
         
         &#course-title {
-            margin-left: 1.875em;
             font-weight: $font-bold;
+            margin-left: 0;
         }
+    }
+}
+
+section#course-description, 
+section#qualification-score, 
+section#subjects,
+section#other-subjects {
+    border-top    : 1px solid $light-gray;
+    padding-top   : 2em;
+    padding-bottom: 2em;
+}
+
+section#course-description {
+    h6 {
+        text-transform: capitalize;
+        @include font-style($font-open-sans, $font-tiny, $font-bold);
+    }
+
+    p {
+        @include font-style($font-open-sans, $font-tiny, $font-regular)
+    }
+}
+
+section#qualification-score {
+    padding-top   : unset;
+    padding-bottom: unset;
+
+    button {
+        position        : relative;
+        width           : 100%;
+        height          : 100%;
+        background-color: $highlight-blue;
+        color           : $white;
+        cursor          : pointer;
+        border          : transparent;
+
+        &:hover, &:active {
+            outline: none;
+        }
+
+        i {
+            position: absolute;
+            left    : -10.5px;
+            color   : #458cb9;
+        }
+    }
+}
+
+section#subjects,
+section#other-subjects {
+    h6 {
+        text-transform: uppercase;
+        @include font-style($font-open-sans, $font-tiny, $font-bold);
     }
 }

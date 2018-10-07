@@ -12,6 +12,7 @@ $black                 : #000000;
 $white                 : #ffffff;
 $gray                  : #818182;
 $light-gray            : #F9F9F9;
+$border-gray           : #e4e4e4;
 $highlight-blue        : #108CBC;
 $alert-red             : #E84849;
 $alert-yellow          : #EDC92C;
@@ -28,8 +29,9 @@ $gradient-end-color    : #AC1BE1;
 
 
 // Font sizes
-$font-large: 1.5625em;
-$font-tiny : 0.9375em;
+$font-large    : 1.5625em;
+$font-tiny     : 0.9375em;
+$font-mark-tiny: 0.7375em;
 
 // Font weights
 $font-bold     : 700;

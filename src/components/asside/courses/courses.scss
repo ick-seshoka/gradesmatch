@@ -1,0 +1,47 @@
+@import '../../../styles/scss/variables';
+@import '../../../styles/scss/mixins';
+// 
+// Course component style
+// 
+
+div.course {
+    padding         : 0.4em 0.55em;
+    margin-bottom   : 0.5em;  
+    border          : 1px solid $border-gray;
+    border-radius   : 3px;
+    background-color: $light-gray;
+
+    h4 {
+        i {
+            margin-right: 0.25em;
+            color       : gray;
+            font-size   : 1.5em;
+        }
+
+        padding-bottom: 0.5em;
+        border-bottom : 1px solid $border-gray;
+        text-transform: capitalize;
+        @include font-style($font-open-sans, $font-tiny, $font-bold);
+    }
+
+    h5 {
+        text-transform: capitalize;
+        @include font-style($font-open-sans, $font-tiny, $font-semi-bold);
+    }
+
+    p {
+        font-size    : 0.6375em;
+        margin-bottom: 0.5em;
+    }
+
+    div#view-course-wrap {
+        text-align: right;
+
+        a {
+            text-decoration: none;
+            text-transform : capitalize;
+            @include font-style($font-open-sans, $font-mark-tiny, $font-semi-bold);
+        }
+    }
+
+}

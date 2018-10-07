@@ -5,19 +5,30 @@
 // 
 
 p.alert-message {
-    margin-right : 1.875em;
     margin-bottom: 0;
     @include font-style($font-open-sans, $font-tiny, $font-regular);
 
-    &.error {
-        color: $alert-red;
-    }
-
     i {
         margin-right    : 0.6em;
-        background-color: $alert-red;
         padding         : 0.4em;
         border-radius   : 50%;
-        color           : $alert-yellow;
+    }
+
+    &.error {
+        color: $alert-red;
+
+        i {
+            background-color: $alert-red;
+            color           : $alert-yellow;
+        }
+    }
+
+    &.success {
+        color: $alert-green;
+
+        i {
+            background-color: $alert-green;
+            color           : $white;
+        }
     }
 }

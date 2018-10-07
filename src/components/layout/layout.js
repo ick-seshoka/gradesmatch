@@ -28,7 +28,35 @@ class Layout extends Component {
                                 <QualificationScore />
                             </section>
                             <aside className="col-3">
-                                <Courses />
+                                <h6>similar qualifications</h6>
+                                <Courses 
+                                    courseSchool="university of south africa" 
+                                    courseName="financial accounting" 
+                                    courseStatus="success" 
+                                    courseStatusIcon="thumbs-up" 
+                                    courseStatusMessage="congrates you meet all the requirements"
+                                    />
+                                <Courses 
+                                    courseSchool="walter sisulu university" 
+                                    courseName="B accounting" 
+                                    courseStatus="error" 
+                                    courseStatusIcon="thumbs-down" 
+                                    courseStatusMessage="minimun requirements not met"
+                                    />
+                                <Courses 
+                                    courseSchool="wits university" 
+                                    courseName="computer science" 
+                                    courseStatus="success" 
+                                    courseStatusIcon="thumbs-up" 
+                                    courseStatusMessage="congrates you meet all the requirements"
+                                    />
+                                <Courses 
+                                    courseSchool="University of pretoria" 
+                                    courseName="electrican engineering" 
+                                    courseStatus="error" 
+                                    courseStatusIcon="thumbs-down" 
+                                    courseStatusMessage="minimun requirements not met"
+                                    />
                             </aside>
                         </div>
                     </div>

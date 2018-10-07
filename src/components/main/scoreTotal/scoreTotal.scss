@@ -1,0 +1,21 @@
+@import '../../../styles/scss/variables';
+@import '../../../styles/scss/mixins';
+// 
+// ScoreTotal component style
+// 
+
+div.score-total {
+    text-align: center;
+
+    h2, p {
+        @include font-style-heading();
+        display       : block;
+        font-size     : 1.0625em;
+        color         : $highlight-blue;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin-top: 0.5em;
+    }
+}

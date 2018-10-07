@@ -1,0 +1,14 @@
+@import '../../../styles/scss/variables';
+@import '../../../styles/scss/mixins';
+// 
+// QualificationInfo style
+// 
+
+div.qualification-info {
+    text-align: center;
+
+    i {
+        color        : $highlight-blue;
+        margin-bottom: 0.25em;
+    }
+}
