@@ -21,6 +21,8 @@ section#other-subjects {
         @media screen and (max-width: 768px) {
             padding-left : unset;
             padding-right: unset;
+            border-top   : 1px solid $border-gray;
+            border-bottom: 1px solid $border-gray;
         }
     }
 }
