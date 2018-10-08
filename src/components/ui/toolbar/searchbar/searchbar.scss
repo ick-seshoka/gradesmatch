@@ -9,7 +9,7 @@ form {
     margin-left: 1.675em;
     line-height: initial;
 
-    div {
+    div#search-bar {
         padding         : 0.4125em 0.6875em;
         border-radius   : 3px; 
         background-color: $white;
@@ -38,5 +38,9 @@ form {
                 color: $gray;
             }
         }
+    }
+
+    @media screen and (max-width: 992px) {
+        display: none;
     }
 }

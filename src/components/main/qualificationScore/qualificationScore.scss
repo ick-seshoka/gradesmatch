@@ -15,6 +15,14 @@ section#other-subjects {
     background-color : $white;
     border-left      : 1px solid $border-gray;
     border-right     : 1px solid $border-gray;
+
+    &#subjects,
+    &#other-subjects {
+        @media screen and (max-width: 768px) {
+            padding-left : unset;
+            padding-right: unset;
+        }
+    }
 }
 
 section#course-heading {
@@ -44,6 +52,11 @@ section#course-heading {
         background-color   : $white;
         border             : 5px solid $white;
         box-shadow         : 0 5px 10px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.03);
+
+        @media screen and (max-width: 768px) {
+            margin-top   : 3.5em;
+            margin-bottom: 1em;
+        }
     }
 
     button { 
@@ -63,6 +76,36 @@ section#course-heading {
             background-color: $gradient-start-color;
             border          : 1px solid $white;
         }
+
+        @media screen and (max-width: 768px) {
+            margin-top      : 1em;
+            padding         : 0.85em 0.65em;
+            color           : $white;
+            background-color: $gradient-start-color;
+            border          : 1px solid $white;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin-top      : 2.1875em;
+            padding         : 0.85em 0.65em;
+            color           : $white;
+            background-color: $gradient-start-color;
+            border          : 1px solid $white;
+        }
+    }
+
+    div#qualification-name-score {
+        display       : flex; 
+        margin-top    : 2.275em; 
+        padding-bottom: 0.3em;
+        align-items   : center; 
+
+        @media screen and (max-width: 768px) {
+            display    : block;
+            align-items: unset;
+            margin-top : 4.275em;
+            text-align: left;
+        }
     }
 
     h2 {
@@ -71,7 +114,19 @@ section#course-heading {
         &#course-title {
             font-weight: $font-bold;
             margin-left: 0;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 0.8em;
+            }
         }
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
     }
 }
 
@@ -116,7 +171,20 @@ section#qualification-score {
             position: absolute;
             left    : -10.5px;
             color   : #458cb9;
+
+            @media screen and (max-width: 992px) {
+                display: none;
+            }
         }
+
+        @media screen and (max-width: 992px) {
+            padding-top   : 0.7em;
+            padding-bottom: 0.7em;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: 0;
     }
 }
 
@@ -125,5 +193,15 @@ section#other-subjects {
     h6 {
         text-transform: uppercase;
         @include font-style($font-open-sans, $font-tiny, $font-bold);
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 1.5em;
+            margin-left  : 0.8em;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-top   : 1.5em;
+        margin-bottom: 1.15em;
     }
 }

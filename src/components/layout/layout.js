@@ -24,10 +24,10 @@ class Layout extends Component {
                 <main>
                     <div className="container">
                         <div className="row">
-                            <section id="course-info" className="col-9">
+                            <section id="course-info" className="col-12 col-lg-9">
                                 <QualificationScore />
                             </section>
-                            <aside className="col-3">
+                            <aside className="col-12 col-lg-3">
                                 <h6>similar qualifications</h6>
                                 <Courses 
                                     courseSchool="university of south africa" 

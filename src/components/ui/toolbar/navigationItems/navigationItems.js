@@ -24,10 +24,10 @@ const navigationItems = () => (
             <li>
                 <NavLink to="/"><i className="fa fa-certificate" aria-hidden="true"></i>qualifications</NavLink>
             </li>
-            <li>
+            <li className="no-lg-display">
                 <NavLink to="/"><i className="fa fa-cubes" aria-hidden="true"></i>modules</NavLink>
             </li>
-            <li>
+            <li className="no-lg-display">
                 <NavLink to="/"><i className="fa fa-stop-circle" aria-hidden="true"></i>modules</NavLink>
             </li>
             <li>

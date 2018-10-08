@@ -13,6 +13,11 @@ div.score-total {
         font-size     : 1.0625em;
         color         : $highlight-blue;
         text-transform: uppercase;
+
+        @media screen and (max-width: 576px) {
+            font-size  : 0.6625em;
+            font-weight: $font-bold;
+        }
     }
 
     h2 {

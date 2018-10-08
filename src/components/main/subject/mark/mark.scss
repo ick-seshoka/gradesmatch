@@ -11,6 +11,10 @@ div.mark {
         display       : inline-block;
         text-transform: capitalize;
         @include font-style($font-open-sans, $font-mark-tiny, $font-regular);
+
+        @media screen and (max-width: 768px) {
+            font-size: 0.6375em;
+        }
     }
 
     span {

@@ -11,4 +11,11 @@ div.qualification-info {
         color        : $highlight-blue;
         margin-bottom: 0.25em;
     }
+
+    @media screen and (max-width: 768px) {
+        &:nth-child(1),  
+        &:nth-child(2){
+            margin-bottom: 2em;
+        }
+    }
 }

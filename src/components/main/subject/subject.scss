@@ -7,6 +7,10 @@
 div.subject, div.subjectMarks {
     background-color: $light-gray;
     margin-bottom   : 0.5em;
+
+    @media screen and (max-width: 768px) {
+        background-color: $white;
+    }
 }
 
 div.subject {
@@ -30,6 +34,10 @@ div.subject {
             i {
                 color: $alert-red;
             }
+        }
+
+        @media screen and (max-width: 768px) {
+            font-weight: $font-bold;
         }
     }
 }

@@ -25,15 +25,15 @@ const qualificationScore = ( props ) => (
     <Wrap>
         <section id="course-heading" >
             <div className="row">
-                <div className="col-7">
+                <div className="col-12 col-lg-7">
                     <div id="logo-container"></div>
                     <h2>university of pretoria</h2>
                 </div>
-                <div className="col-5">
+                <div className="col-12 col-lg-5">
                     <Button>request for school to contact you</Button>
                 </div>
             </div>
-            <div className="row no-gutters justify-content-between" style={{ display: "flex", alignItems: "center", marginTop: " 2.275em", paddingBottom: "0.3em" }} >
+            <div id="qualification-name-score" className="row no-gutters justify-content-between" >
                 <h2 id="course-title">BCom Accounting</h2>
                 <Alert alertType="error" alertIcon="exclamation-triangle" alertMessage="Minimum requirements not met. You can improve your marks" />
             </div>
@@ -57,26 +57,26 @@ Accountants (SAICA) and the Independent Regulatory Board for Auditors (IRBA).</p
             </div>
         </section>
         <section id="qualification-score">
-            <div className="row">
+            <div className="row no-gutters">
                 <ScoreTotal scoreTotalTitle="my point" scoreTotal="24" />
                 <ScoreTotal scoreTotalTitle="requored points" scoreTotal="30" />
                 <ScoreTotal scoreTotalTitle="my subjects" scoreTotal="3/3" />
-                <div className="col-3 score-total">
+                <div className="col-12 col-lg-3 score-total">
                     <Button><i className="fa fa-caret-left fa-2x" aria-hidden="true"></i>SET A GOAL</Button>
                 </div>
             </div>
         </section>
         <section id="subjects">
             <h6>required subjects</h6>
-            <Subject subjectScore="pass" subjectTitle="mathematics"  subjectMyMark="50%" subjectRequiredMark="50%" subjectAPSPoints="4" />
-            <Subject subjectScore="pass" subjectTitle="afrikaans first additional language"  subjectMyMark="50%" subjectRequiredMark="50%" subjectAPSPoints="4" />
-            <Subject subjectScore="pass" subjectTitle="english home language"  subjectMyMark="50%" subjectRequiredMark="50%" subjectAPSPoints="4" />
-            <Subject subjectScore="fail" subjectTitle="mathematics"  subjectMyMark="50%" subjectRequiredMark="50%" subjectAPSPoints="4" />
+            <Subject marksCount="4" subjectScore="pass" subjectTitle="mathematics"  subjectMyMark="50%" subjectRequiredMark="50%" subjectAPSPoints="4" />
+            <Subject marksCount="4" subjectScore="pass" subjectTitle="afrikaans first additional language"  subjectMyMark="50%" subjectRequiredMark="50%" subjectAPSPoints="4" />
+            <Subject marksCount="4" subjectScore="pass" subjectTitle="english home language"  subjectMyMark="50%" subjectRequiredMark="50%" subjectAPSPoints="4" />
+            <Subject marksCount="4" subjectScore="fail" subjectTitle="mathematics"  subjectMyMark="50%" subjectRequiredMark="50%" subjectAPSPoints="4" />
         </section>
         <section id="other-subjects">
             <h6>other subjects</h6>
-            <Subject subjectScore="pass" subjectTitle="mathematics"  subjectMyMark="50%" subjectAPSPoints="4" />
-            <Subject subjectScore="pass" subjectTitle="english home language"  subjectMyMark="50%" subjectAPSPoints="4" />
+            <Subject marksCount="6" subjectScore="pass" subjectTitle="mathematics"  subjectMyMark="50%" subjectAPSPoints="4" />
+            <Subject marksCount="6" subjectScore="pass" subjectTitle="english home language"  subjectMyMark="50%" subjectAPSPoints="4" />
         </section>
     </Wrap>
 );

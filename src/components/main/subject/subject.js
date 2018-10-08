@@ -28,14 +28,14 @@ const subject = ( props ) => {
 
     return (
         <div className="row no-gutters">
-            <div className="col-5 subject">
+            <div className="col-12 col-lg-5 subject">
                 <p className={ props.subjectScore }><i className={ "fa fa-" + subjectStatusIcon + "-o " }></i> { props.subjectTitle }</p>
             </div>
-            <div className="col-7 subjectMarks">
+            <div className="col-12 col-lg-7 subjectMarks">
                 <div className="row no-gutters justify-content-end">
-                    <Mark markClassName="my-mark" markTitle="my mark" markScore={ props.subjectMyMark } />
-                    <Mark markClassName="required-mark" markTitle="required mark" markScore={ props.subjectRequiredMark } />
-                    <Mark markClassName="aps-points" markTitle="APS points" markScore={ props.subjectAPSPoints } />
+                    <Mark markColumns={ props.marksCount } markClassName="my-mark" markTitle="my mark" markScore={ props.subjectMyMark } />
+                    <Mark markColumns={ props.marksCount } markClassName="required-mark" markTitle="required mark" markScore={ props.subjectRequiredMark } />
+                    <Mark markColumns={ props.marksCount } markClassName="aps-points" markTitle="APS points" markScore={ props.subjectAPSPoints } />
                 </div>
             </div>
         </div>

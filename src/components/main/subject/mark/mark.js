@@ -11,7 +11,7 @@ const mark = ( props ) => {
 
     if ( props.markScore ) {
         marks = (
-            <div className="col-4">
+            <div className={ "col-" + props.markColumns}>
                 <div className={ "mark " + props.markClassName}>
                     <p>{ props.markTitle }</p>
                     <span>{ props.markScore }</span>

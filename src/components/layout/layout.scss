@@ -21,4 +21,9 @@ main {
             @include font-style($font-open-sans, $font-mark-tiny, $font-semi-bold);
         }
     }
+
+    @media screen and (max-width: 992px) {
+        margin-top  : 4.5em;
+        padding-left: unset;
+    }
 }
